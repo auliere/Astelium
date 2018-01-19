@@ -2,7 +2,7 @@ import {Server, RestCallback, HttpRequest, RequestMethod} from './server'
 const fs = require('fs');
 import * as path from 'path'
 
-const server = new Server();
+const server = new Server('localhost', process.env.PORT);
 
 server.staticResources = [
     "client/static/audio",
